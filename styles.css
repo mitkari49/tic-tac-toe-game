@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* Updated gradient background */
+    animation: gradient 15s ease infinite; /* Animation for gradient */
+}
+
+
+
+.container {
+    text-align: center;
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+}
+
+.player-names {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds a gap between elements */
+}
+
+input {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.game {
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto; /* Center the grid */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cell:hover {
+    background-color: rgba(224, 224, 224, 0.7); /* Slightly transparent on hover */
+}
+
+.message {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    backdrop-filter: blur(100%); /* Glass effect */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    height: 100% auto; /* Ensure it takes full height */
+}
